@@ -28,6 +28,7 @@ jobs:
           npx indexifier .preview --html  --extensions .html  > .preview/index.html
           mv .preview ${{ github.ref_name }}
           mkdir .preview
+          echo "AUE"
           mv ${{ github.ref_name }} .preview
 
       - name: Deploy
